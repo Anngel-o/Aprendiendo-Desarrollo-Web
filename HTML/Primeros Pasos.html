@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo html</title>
+    <!-- Aplica propiedades css a etiquetas -->
+    <style> 
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--Comentario en html-->
+
+    <h1>Tablas</h1>
+    <!-- Tablas -->
+    <table style="width: 500px;">
+        <thead> <!--Agrupar elementos en una misma cabecera-->
+            <tr> <!--table row fila-->
+                <th>Producto</th>  <!--Cabecera--> 
+                <th>Precio</th>  
+            </tr>
+        </thead>
+        <tbody> <!--Agrupar filas del cuerpo de la tabla-->
+            <tr>
+                <td>Sabritas</td> <!--Elementos dentro de las celdas-->
+                <td>2$</td>
+            </tr>
+            <tr>
+                <td>Tostitos</td> 
+                <td>2.1$</td>
+            </tr>
+        </tbody>
+        <tfoot> <!--Pie de tabla-->
+            <td></td>
+            <td>Total: 4.1$</td>
+        </tfoot>
+    </table>
+
+    <h1>Formularios</h1>
+    <!--Formularios-->
+    <form action="/formulario" method="post">
+        <label for="nombre">Nombre </label>
+        <!--Caja de texto como entrada de dato-->
+        <input type="text" id="nombre" name="nombre" placeholder="Indica al usuario que debe escribir su nombre">
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Indica al usuario que debe escribir su apellido"> <br>
+        <label for="comentario">Comentario </label> <br>
+        <!--Caja de comentario-->
+        <textarea name="comentario" id="comentario" placeholder="Ingrese comentario" cols="30" rows="10"></textarea> <br>
+        <!--Botones-->
+        <input type="submit" value="Input submit">
+        <!--  -->
+        <button type="submit">Botón submit</button>
+        <button type="reset">Botón reset</button>
+        <button type="button">Botón normal</button>
+        <!--La etiquetas button permiten agregar más propiedades html-->
+    </form>
+
+    <h1>Listas</h1>
+    <!-- Listas -->
+    <h2>Listas no ordenadas</h2>
+    <!-- Listas no ordenadas unordered list-->
+    <ul>
+        <!-- List item -->
+        <li> Item 1</li> 
+        <li> Item 2</li>
+        <li> Item 3</li>
+    </ul>
+    <h2>Listas ordenadas</h2>
+    <!-- Listas ordenadas ordered list-->
+    <ol>
+        <!-- List item -->
+        <li  value="0"> Item 1</li> <!--La lista comenzará del valor 0-->
+        <li> Item 2</li>
+        <li> Item 3</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">Sub item 1</li>
+                <!-- la lista empezará con a. -->
+                <li style="list-style-type: lower-alpha;">Sub item 2</li>
+            </ol>
+        </li>
+    </ol>
+
+    <h1>Títulos y subtítulos</h1>
+    <!--Títulos y subtítulos-->
+    <h1>Este es un heading h1</h1>
+    <h2>Este es un heading h2</h2>
+    <h3>Este es un heading h3</h3>
+    <h4>Este es un heading h4</h4>
+
+    <h1>Parrafos</h1>
+    <!--Parrafos-->
+    <p>Parrafo de texto.</p>
+    <hr> <!--Línea horizontal divisora-->
+    <p>Otro parrafo de texto con etiqueta p <span style="color: aqua;">más largo</span> 
+    <br>para utilizar la etiqueta span</p> 
+
+    <h1>Hipervínculos</h1>
+    <!--Hipervínculo en la misma instancia de la página-->
+    <a href="https://www.google.com">Ir a Google en esta página</a> 
+    <br> <!--Salto de línea-->
+    <!--Hipervínculo en una página nueva-->
+    <a target="_blank" href="https://www.google.com">Ir a Google en otra página</a> 
+
+    <h1>Imágenes</h1>
+    <!--Imágenes-->
+    <img src="img/HTML5.png" width="300" height="300"/>
+</body>
+</html>

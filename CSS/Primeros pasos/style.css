@@ -1,0 +1,198 @@
+/* Selección por etiqueta */
+h2 { 
+    color: crimson;
+}
+
+p, h2 {
+    color: darkcyan;
+}
+
+/* Selección por id */
+#titulo { 
+    color: brown;
+}
+
+/* Selección por clase */
+.texto {
+    color: blueviolet;
+}
+
+/* Selección por clase en etiqueta */
+p.especial {
+    color: tomato;
+}
+
+/* Selección por etiqueta en etiqueta */
+div p div h1{
+    color: blanchedalmond;
+}
+
+/* Selección de todos los elementos html */
+* { /*Aplica cambios sólo a los elementos que no han sido definidos por otro selector*/
+    font-size: 24px;
+    /* color: black; */
+}
+
+.color{
+    /* color: #00f; */
+    /* 000 -> negro    ---   fff -> blanco */
+
+    /* color: #ff0000; */
+    /* los dos primeros 00 -> ROJO */
+    /* los sigientes dos 00 -> VERDE */
+    /* los dos últimos 00 -> AZUL */
+
+    color: rgb(255, 0, 0);
+    /* convención rgb(ROJO, VERDE, AZUL) */
+
+    /* border: 5px black solid; */
+    border-style: solid;
+    border-color: aqua;
+    border-radius: 5px;
+    border-width: 5px;
+}
+
+#fondo{
+    background-color: rgba(0, 0, 0, 0.3); 
+    /* rgba indica la intensidad o transparencia del color -> 0 es transparencia 1 es sólido*/
+
+    opacity: 0.9;
+    /* opacity le da tranparencia al elemento completo */
+
+    height: 100px;
+    /* background-image: url("img/CSS3.png");
+    /* background-size: cover; 
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: right top; */
+
+    /* Repetir fondo horizontal y vertical */
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+
+    /* Manera corta: */
+    background: rgba(0, 0, 0, 0.3) url("img/CSS3.png") no-repeat right top /100px 100px; 
+    /*  */
+}
+
+#modelo{
+    height: 100px;
+    background: rgba(0, 0, 0, 0.3) url("img/Box_model.png") no-repeat right top /100px 100px;
+    opacity: 0.9;
+}
+.margen{
+    background-color: chocolate;
+    margin: 15px 20px 25px 30px;
+    /* margin: 15px; también puede especificarse sólo uno y se tomarán todos con ese valor */
+    padding: 30px 25px 20px 15px; /*relleno alrededor del contenido de un elemento dentro de los bordes definidos*/
+    border: solid 1px black;
+    overflow: hidden;
+    /* overflow ->hidden todo el contenido que no alcanza a mostrarse dentro del elemento se oculta para que no sobresalga fuera del elemento
+    overflow ->scroll agrega unas barras para deslizarse dentro del elemento y ver lo que está oculto para que no sobresalga fuera del elemento*/
+    outline: 1px solid red;
+    /* Borde que se coloca por fuera de la propiedad border */
+}
+
+.textop{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    text-decoration: line-through;
+    text-shadow: 3px 5px 5px blue;
+    /* shaddow es una sombra que se mueve a la derechopx abajopx difunidadopx*/
+}
+
+a:link{
+    /* a:link -> cuando el link no ha sido visitado */
+    color: violet;
+}
+
+a:visited{
+    /* a:visited -> cuando el link ya ha sido visitado */
+    color: gray;
+}
+
+a:hover{
+    /* a:hover -> cuando se pasa el mouse por encima del link */
+    color: yellow;
+}
+
+a:active{
+    /* a:active -> cuando se está presionando el link */
+    color: red;
+}
+
+ul{
+    background-color: cyan;
+    list-style-type: circule;
+    /* list-style-type: none; */
+    /* list-style-position: inside; */
+    padding-left: 0;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: solid 1px #eee;
+}
+
+th{
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even){
+    background-color: #eee;
+}
+tr:hover{
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+span{
+    display: block;
+}
+
+.inline{
+    display: inline;
+    /* display: inline-block;
+    height: 55px; */
+    /* A la propiedad inline no se le puede agregar un width ni height, sin embargo a la propiedad de inline-block sí se le permite */
+}
+
+#position{
+    position: fixed;
+    /* position: fixed; se moverá junto con el documento en lugar de quedarse en un lugar estático */
+    left: 20px;
+    /* Desplazamiento de 20 px izquierda */
+}
+
+.left{
+    float: left;
+    width: 100px;
+}
+/* La propiedad float posiciona los elementos restantes del lado contrario */
+.right{
+    float: right;
+}
+.container{
+    height: 200px;
+}
+
+.card{
+    border: solid 1px #ddd;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 10px 15px;
+}
+
+.center{
+    /* padding: 50px 0; centrar verticalmente */
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}

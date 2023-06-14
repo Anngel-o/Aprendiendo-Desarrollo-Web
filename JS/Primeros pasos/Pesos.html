@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tu peso en otros planetas</title>
+  </head>
+  <body>
+    <h1> Tu peso en otros planetas </h1>
+    <p>Tu peso depende de la fuerza de aceleración de la gravedad que experimentas en un planeta</p>
+    <script>
+      var peso = parseFloat(prompt("¿Cuál es tu peso terrestre?"));
+      var planeta = prompt("Escoge un planeta");
+      var g_tierra = 9.807;
+      var g_marte = 3.7;
+      var g_jupiter = 24.8;
+      var peso_final;
+      var nombre = "";
+
+      if (planeta == "marte")
+      {
+        peso_final = (g_marte * peso)/ g_tierra;
+        peso_final = parseFloat(peso_final).toFixed(2);
+        nombre = "Marte";
+      }
+      else if (planeta == "jupiter")
+      {
+        peso_final = (g_jupiter * peso)/ g_tierra;
+        peso_final = parseFloat(peso_final).toFixed(2);
+        nombre = "Jupiter";
+      }
+      else
+      {
+        peso_final = 1000000;
+        nombre = "Un lugar no aplicable";
+      }
+      document.write("Tu peso en "+ nombre +" es <strong>" + peso_final + " Kg </strong>");
+
+    </script>
+  </body>
+</html>
