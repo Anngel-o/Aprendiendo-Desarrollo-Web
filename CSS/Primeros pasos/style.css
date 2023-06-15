@@ -71,13 +71,13 @@ div p div h1{
     background-repeat: repeat-y; */
 
     /* Manera corta: */
-    background: rgba(0, 0, 0, 0.3) url("img/CSS3.png") no-repeat right top /100px 100px; 
+    background: rgba(0, 0, 0, 0.3) url("../img/CSS3.png") no-repeat right top /100px 100px; 
     /*  */
 }
 
 #modelo{
     height: 100px;
-    background: rgba(0, 0, 0, 0.3) url("img/Box_model.png") no-repeat right top /100px 100px;
+    background: rgba(0, 0, 0, 0.3) url("../img/Box_model.png") no-repeat right top /100px 100px;
     opacity: 0.9;
 }
 .margen{
